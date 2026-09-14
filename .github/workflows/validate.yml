@@ -1,0 +1,24 @@
+name: Validate project artifacts
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate notebook JSON
+        run: python -m json.tool loan_default_prediction.ipynb > /dev/null
+      - name: Validate required files and README links
+        shell: bash
+        run: |
+          test -f LICENSE
+          test -f docs/data-dictionary.md
+          test -f docs/results.md
+          grep -q 'docs/data-dictionary.md' README.md
+          grep -q 'docs/results.md' README.md

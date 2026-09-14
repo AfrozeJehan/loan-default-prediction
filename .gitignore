@@ -1,0 +1,20 @@
+# Python and Jupyter caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
