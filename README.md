@@ -1,5 +1,8 @@
 # Loan Default Prediction
 
+[![View live report](https://img.shields.io/badge/Report-View%20live%20report-blue)](https://afrozejehan.github.io/loan-default-prediction/)
+[![Notebook](https://img.shields.io/badge/Notebook-View%20analysis-orange)](loan_default_prediction.ipynb)
+
 Classification analysis of the HMEQ home-equity-loan dataset, completed for
 the MIT Professional Education Applied Data Science Program.
 
@@ -13,6 +16,9 @@ XGBoost comparisons, with grid search and classification metrics.
 
 ## Results and reproducibility
 
+- [Project repository](https://github.com/AfrozeJehan/loan-default-prediction)
+- [Live report landing page](https://afrozejehan.github.io/loan-default-prediction/)
+- [Live HTML report](https://afrozejehan.github.io/loan-default-prediction/loan_default_prediction.html)
 - [Executed notebook](loan_default_prediction.ipynb)
 - [Rendered HTML report and embedded visuals](loan_default_prediction.html)
 - [Results notes](docs/results.md)
